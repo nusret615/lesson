@@ -1,34 +1,21 @@
-li:first-child {
-    color: teal;
-}
-li:nth-child(2) {
-    color: red;
-}
-li:nth-child(3) {
-    color: green;
-}
-li:nth-child(4) {
-    color: black;
-}
-li:last-child {
-    color: purple;
-}
+@import
+url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 body {
-background-color: #dff3ff;
-font-family: Arial, 
-sans-serif;
-color: #064b91
-font-size 14px;
+    font-family: 'Roboto',
+    sans-serif;
 }
-
-title {
-    color: #0056b3
-    font-size 28px
+h1 {
+    font-size: 36px;
 }
-
-p {
-    font-style: italic;
+table {
+    border-collapse: collapse;
+    width: 600px;
 }
-ul {
-    padding-left: 40px;
+th {
+    background-color: lightgrey;
+    text-align: center;
+}
+th, td {
+    padding: 10px;
+    border-bottom: 1px solid #b0a160;
 }
