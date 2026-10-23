@@ -1,56 +1,112 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap');
-
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
 body {
-    font-family: 'Montserrat', sans-serif;
-    background-color: #f0fff8;
+   height: 100%;
+   background: black;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-family: Arial, sans-serif;
+   padding: 20px 0;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 18px;
     padding: 20px;
-    color: #123c56;
-}
-
-h1 {
-    font-weight: 900;
-    font-size: 32px;
-}
-
-h2 {
-    font-weight: 900;
-    margin-top: 25px;
-}
-
-table {
     width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 20px;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
-td {
-    border: 1px solid #80ced6;
-    padding: 12px;
+.card {
+    height: 200px;
+    border: 2px solid #b9faff;
+    border-radius: 14px;
+    padding: 18px;
+    position: relative;
+    color: white;
+    overflow: hidden;
 }
 
-td:first-child {
-    font-weight: 700;
-    width: 28%;
+.purple {
+    background-color: purple;
 }
 
-.box {
-    border: 2px solid #80ced6;
-    padding: 20px;
-    margin: 15px 0;
-    line-height: 1.6;
+.black {
+    background-color: black;
+}
+.green {
+    background-color: green;
 }
 
-ul {
-    border: 2px solid #80ced6;
-    padding: 20px 40px;
-    line-height: 1.8;
-    list-style-type: square;
+.blue {
+    background-color: blue;
 }
 
-li {
-    padding-left: 5px;
+.chip {
+    background: #b5d85b;
+    color: #477c39;
+    width: 25px;
+    height: 22px;
+    border-radius: 4px;
+    text-align: center;
+    padding-top: 3px;
+    margin-bottom: 12px;
+    font-size: 18px;
+}
+
+.bank {
+    display: flex;
+    margin-top: 0;
+    justify-content: flex-end;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.card h2 {
+    font-size: 17px;
+    margin-bottom: 6px;
+}
+
+.card h3 {
+    font-size: 13px;
+    font-style: italic;
+}
+
+.card p {
+    font-size: 10px;
+    margin-top: 12px;
+}
+
+.visa {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.master {
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;
+    background: #e52d35;
+    color: white;
+    border-radius: 15px;
+    padding: 7px;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+@media (max-width: 550px) {
+    .cards {
+        grid-template-columns: 100%
+    }
 }
